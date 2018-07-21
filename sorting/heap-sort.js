@@ -37,7 +37,7 @@ const maxHeapify = function (array, index, heapSize) {
  * @param {*} heapSize 
  */
 const buildMaxHeap = function (array, heapSize) {
-    let iParent = Math.floor((heapSize - 1)) / 2; // get the current element's parent index
+    let iParent = Math.floor((heapSize - 1) / 2); // get the current element's parent index
 
     for (let i = iParent; i >= 0; i--) {
         maxHeapify(array, i, heapSize);
